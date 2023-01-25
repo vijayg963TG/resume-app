@@ -1,0 +1,90 @@
+.container {
+    width: 920px;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid grey;
+  margin: 1rem 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.formBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.formBtn button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+}
+
+.formgroup label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.formgroup p {
+  color: crimson;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.formgroup textarea,
+.formgroup input {
+  width: 98%;
+  display: block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.a{
+  background-color: rgb(7, 133, 183);
+  color: white;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+}
+
+.a:hover{
+  color: rgb(229, 223, 223);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    box-sizing: border-box;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .formgroup textarea,
+  .formgroup input {
+    width: 94%;
+  }
+
+.formgroup texta
+
+  .formBtn {
+    padding: 0;
+  }
+  .formBtn button {
+    padding: 0.5rem 1.2rem;
+  }
+}

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import CreateCV from "./pages/createCV";
+import { initialState } from "./helper/data";
+import { dataContext } from "./context/dataContext";
 
 function App() {
+  const [data, setData] = useState(initialState);
+  // console.log(data)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <dataContext.Provider value={{data, setData}}>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/createCV" element={<CreateCV />}/>
+      </Routes>
+    </dataContext.Provider>
   );
 }
 
