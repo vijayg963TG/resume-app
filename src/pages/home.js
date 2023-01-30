@@ -20,6 +20,7 @@ function Home() {
     setTimeout(() => setloading(true), 2500);
   };
 
+
   return (
     <div className="App">
       <div>
@@ -27,8 +28,8 @@ function Home() {
           {loading && (
             <div className="flexBetween">
               <button onClick={downloadPdf}>Download</button>
-              <Link to={"/createCV"}>
-                <button>Create CV</button>
+              <Link to={"/cvform"}>
+                <button>Cv Form</button>
               </Link>
             </div>
           )}
@@ -38,7 +39,7 @@ function Home() {
             <Details {...data} />
             <Technology {...data} />
           </div>
-          <Footer />
+     {data.isLogo && <Footer />}
         </div>
       </div>
     </div>

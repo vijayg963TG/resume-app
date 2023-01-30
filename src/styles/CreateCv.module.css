@@ -1,5 +1,5 @@
 .container {
-    width: 920px;
+  width: 920px;
   box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto;
@@ -27,7 +27,7 @@
   display: block;
   margin-top: 1rem;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 
@@ -45,13 +45,18 @@
   display: block;
   font-weight: 500;
   font-size: 1.2rem;
+  color: rgb(58, 58, 58);
   padding: 8px;
   margin: 5px 0;
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+ textarea{
+  max-width: 840px;
+  min-height: 10rem;
+}
 
-.a{
+.a {
   background-color: rgb(7, 133, 183);
   color: white;
   margin-top: 1rem;
@@ -59,12 +64,110 @@
   border-radius: 8px;
 }
 
-.a:hover{
+.a:hover {
   color: rgb(229, 223, 223);
 }
 
+input[type="checkbox"] {
+  height: 1.3rem;
+  display: inline-block;
+  max-width: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  align-items: baseline;
+}
 
+.col label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: left;
+  text-transform: capitalize;
+}
 
+.col textarea,
+.col input {
+  width: 98%;
+  display: block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(58, 58, 58);
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.colsm label {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: left;
+  text-transform: capitalize;
+  display: block;
+}
+
+.colsm textarea,
+.colsm input {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(58, 58, 58);
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.colsm textarea{
+  display: block;
+  height: 10rem;
+  min-width: 18rem;
+  max-width: 800px;
+}
+
+.col input[type="checkbox"] {
+  height: 1.3rem;
+  display: inline-block;
+  max-width: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  align-items: baseline;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1rem #8080804f;
+  position: relative;
+}
+
+.addButton{
+  padding-bottom: 2rem;
+}
+
+.deleteEdu{
+  display: block;
+  margin: 1.5rem;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+}
+
+.submit{
+  margin: 2rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit button{
+  padding: 0.8rem 2.6rem;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -79,9 +182,7 @@
     width: 94%;
   }
 
-.formgroup texta
-
-  .formBtn {
+  .formgroup texta .formBtn {
     padding: 0;
   }
   .formBtn button {

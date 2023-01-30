@@ -30,19 +30,45 @@ export const colData = [
   { field: "View" },
 ];
 
-
+      // if(text==="summary" || text==="description" ){
+      //             }
 
 export const initialState = {
+  isLogo: true,
   name: "Diksha Sharma",
   post: "WordPress Developer",
   summary:
     "Having 2.5 years of experience in all aspects of WordPress website creation, including design, plug ins, and implementation. Skilled in creating engaging and interactive websites. Excel at team projects and leadership. Detail oriented and knowledgeable in various programming languages.",
-  education: "Computer Science & engineering Govt. Polytechnic Hamirpur 2020",
-  projects:
-    "Soxs , create this project in WordPres This website is used for selling Coffee and Tea. At J. Hornig, we only roast the highest quality beans from the best growing areas in the world.",
+  education: [
+    { qualification: "XII", fromWhere: "D.A.V School", when: "2020" },
+  ],
+  projects: [
+    {
+      projectName: "E-commarce website",
+      description:
+        " create this project in WordPres This website is used for selling Coffee and Tea. At J. Hornig, we only roast the highest quality beans from the best growing areas in the world.",
+      role: "FrontEnd Developer",
+      techTools: "git, vercel",
+      teamSize: "2",
+      url: "xuz.vercel.com",
+    },
+  ],
   skills: "Html, Css, Bootstrap, javaScript, wordpress, mysql ",
   tools: "jira, github, clickup",
   langaugeSkills: "English, Hindi",
   contactUs:
     "Technogetic pvt. ltd., business@technogetic.com, +91 9779992829, mohali, punjab, india",
 };
+
+export const allField = [
+  "name",
+  "post",
+  "summary",
+  "skills",
+  "tools",
+  "langaugeSkills",
+  "contactUs",
+];
+export const eduField = ["qualification", "fromWhere", "when"];
+
+export const projects = ["projectName", "role", "techTools", "teamSize", "url","description",]

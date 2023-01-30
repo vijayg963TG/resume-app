@@ -5,16 +5,24 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiMapPinLine } from "react-icons/ri";
 import { BsTelephone } from "react-icons/bs";
 
-export const Technology = ({ contactUs, skills, tools, langaugeSkills }) => {
+export const Technology = ({
+  isLogo,
+  contactUs,
+  skills,
+  tools,
+  langaugeSkills,
+}) => {
+  let data = contactUs?.split(",");
   // console.log(contactUs, skills, tools, langaugeSkills);
-  let data = contactUs.split(",");
   // console.log(data);
 
   return (
     <div className="right-part flex-35">
-      <div className="logo-img">
-        <img width={126} height={53} src="logoTG.png" alt="logo" />
-      </div>
+      {isLogo && (
+        <div className="logo-img">
+          <img width={126} height={53} src="logoTG.png" alt="logo" />
+        </div>
+      )}
       {/* skills */}
       <div>
         <Title title={"Skills"} />
@@ -70,25 +78,25 @@ export const Technology = ({ contactUs, skills, tools, langaugeSkills }) => {
               <strong>
                 <FiUsers />
               </strong>
-              {data[0]}
+              {data ? data[0] : ""}
             </p>
             <p>
               <strong>
                 <HiOutlineMail />
               </strong>
-              {data[1]}
+              {data ? data[1] : ""}
             </p>
             <p>
               <strong>
                 <BsTelephone />
               </strong>
-              {data[2]}
+              {data ? data[2] : ""}
             </p>
             <p>
               <strong>
                 <RiMapPinLine />
               </strong>
-              {data.slice(3)}
+              {data ? data.slice(3) : ""}
             </p>
           </div>
         </div>

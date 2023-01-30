@@ -11,7 +11,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 a {
   font-weight: 500;
   color: #000000;
@@ -29,8 +28,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
-
 
 button {
   border-radius: 8px;
@@ -62,8 +59,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-
 
 a {
   font-weight: 500;
@@ -198,7 +193,7 @@ button:focus-visible {
   position: relative;
 }
 
-.details-sec p{
+.details-sec p {
   word-break: break-word;
 }
 
@@ -214,35 +209,36 @@ button:focus-visible {
   padding: 1.5rem 0;
 }
 
-.G-signin{
+.G-signin {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
 
-.cvDownload{
+.cvDownload {
   margin: 1rem 2rem;
 }
 
-.flexBetween{
+.flexBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+
+.education-Section{
+  margin: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.education-Section p{
+  margin: 3px 0;
+}
+
+.education-Section strong{
+  color: #090e10;
+}
 
 /* Loader  */
 @keyframes bouncing-loader {
@@ -296,9 +292,9 @@ button:focus-visible {
   body {
     font-size: 14px !important;
   }
-:root{
-  padding: 0.5rem;
-}
+  :root {
+    padding: 0.5rem;
+  }
 
   .right-part {
     padding: 1rem 0.5rem;
@@ -308,6 +304,7 @@ button:focus-visible {
   .left-part {
     padding: 1rem 0.5rem;
     margin-right: 0.5rem;
+    min-width: 500px;
   }
 
   .textDark {
@@ -341,7 +338,7 @@ button:focus-visible {
     padding-left: 5px;
   }
 
-  ul{
+  ul {
     padding: 0 1.2rem;
   }
 }
@@ -351,7 +348,7 @@ button:focus-visible {
     font-size: 12px !important;
   }
 
-  .logo-img img{
+  .logo-img img {
     width: 100%;
     height: auto;
   }
