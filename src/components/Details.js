@@ -37,28 +37,38 @@ export const Details = ({ name, post, summary, education, projects }) => {
                 </div>
                 <Title title={"Education"} />
                 {education?.map((e, i) => (
-                  <div key={i} className="education-Section">
-                    <p
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                      className="textDark textContainer"
-                    >
-                      <strong>Qualification :-</strong> {e.qualification}
-                    </p>
-                    <p
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                      className="textDark textContainer"
-                    >
-                      <strong>From Where :-</strong> {e.fromWhere}
-                    </p>
-                    <p
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                      className="textDark textContainer"
-                    >
-                      <strong>When :-</strong> {e.when}
-                    </p>
+                  <div>
+                    {e && (
+                      <div key={i} className="education-Section">
+                        {e.qualification && (
+                          <p
+                            contentEditable="true"
+                            suppressContentEditableWarning={true}
+                            className="textDark textContainer"
+                          >
+                            <strong>Qualification :-</strong> {e.qualification}
+                          </p>
+                        )}
+                        {e.fromWhere && (
+                          <p
+                            contentEditable="true"
+                            suppressContentEditableWarning={true}
+                            className="textDark textContainer"
+                          >
+                            <strong>From Where :-</strong> {e.fromWhere}
+                          </p>
+                        )}
+                        {e.when && (
+                          <p
+                            contentEditable="true"
+                            suppressContentEditableWarning={true}
+                            className="textDark textContainer"
+                          >
+                            <strong>When :-</strong> {e.when}
+                          </p>
+                        )}
+                      </div>
+                    )}
                   </div>
                 ))}
                 <br />
@@ -73,48 +83,60 @@ export const Details = ({ name, post, summary, education, projects }) => {
               <Title title={"Projects"} />
               {projects?.map((e, i) => (
                 <div key={i} className="education-Section">
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Project Name :-</strong> {e.projectName}
-                  </p>
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Description :-</strong> {e.description}
-                  </p>
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Role :-</strong> {e.role}
-                  </p>
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Tech. Tools :-</strong> {e.techTools}
-                  </p>
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Team Size :-</strong> {e.teamSize}
-                  </p>
-                  <p
-                    contentEditable="true"
-                    suppressContentEditableWarning={true}
-                    className="textDark textContainer"
-                  >
-                    <strong>Url :-</strong> {e.url}
-                  </p>
+                  {e.projectName && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Project Name :-</strong> {e.projectName}
+                    </p>
+                  )}
+                  {e.description && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Description :-</strong> {e.description}
+                    </p>
+                  )}
+                  {e.role && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Role :-</strong> {e.role}
+                    </p>
+                  )}
+                  {e.techTools && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Tech. Tools :-</strong> {e.techTools}
+                    </p>
+                  )}
+                  {e.teamSize && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Team Size :-</strong> {e.teamSize}
+                    </p>
+                  )}
+                  {e.url && (
+                    <p
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                      className="textDark textContainer"
+                    >
+                      <strong>Url :-</strong> {e.url}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
