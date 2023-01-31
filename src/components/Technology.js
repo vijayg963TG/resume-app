@@ -63,7 +63,6 @@ export const Technology = ({
               .filter((x) => x.length >= 2)
               .map((s, i) => (
                 <strong key={i} className="language">
-                  {" "}
                   - {s}
                 </strong>
               ))}

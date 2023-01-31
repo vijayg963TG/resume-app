@@ -46,7 +46,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                             suppressContentEditableWarning={true}
                             className="textDark textContainer"
                           >
-                            <strong>Qualification :-</strong> {e.qualification}
+                            <strong></strong> {e.qualification}
                           </p>
                         )}
                         {e.fromWhere && (
@@ -55,7 +55,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                             suppressContentEditableWarning={true}
                             className="textDark textContainer"
                           >
-                            <strong>From Where :-</strong> {e.fromWhere}
+                            <strong></strong> {e.fromWhere}
                           </p>
                         )}
                         {e.when && (
@@ -64,7 +64,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                             suppressContentEditableWarning={true}
                             className="textDark textContainer"
                           >
-                            <strong>When :-</strong> {e.when}
+                            <strong></strong> {e.when}
                           </p>
                         )}
                       </div>
@@ -98,7 +98,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                       suppressContentEditableWarning={true}
                       className="textDark textContainer"
                     >
-                      <strong>Description :-</strong> {e.description}
+                      <h4><strong>Description :-</strong></h4> {e.description}
                     </p>
                   )}
                   {e.role && (
@@ -107,7 +107,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                       suppressContentEditableWarning={true}
                       className="textDark textContainer"
                     >
-                      <strong>Role :-</strong> {e.role}
+                      <h4><strong>Role :-</strong></h4> {e.role}
                     </p>
                   )}
                   {e.techTools && (
@@ -116,7 +116,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                       suppressContentEditableWarning={true}
                       className="textDark textContainer"
                     >
-                      <strong>Tech. Tools :-</strong> {e.techTools}
+                      <h4> <strong>Tech. Tools :-</strong></h4> {e.techTools}
                     </p>
                   )}
                   {e.teamSize && (
@@ -125,7 +125,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                       suppressContentEditableWarning={true}
                       className="textDark textContainer"
                     >
-                      <strong>Team Size :-</strong> {e.teamSize}
+                      <h4><strong>Team Size :-</strong></h4> {e.teamSize}
                     </p>
                   )}
                   {e.url && (
@@ -134,7 +134,7 @@ export const Details = ({ name, post, summary, education, projects }) => {
                       suppressContentEditableWarning={true}
                       className="textDark textContainer"
                     >
-                      <strong>Url :-</strong> {e.url}
+                      <h4><strong>Url :-</strong></h4> {e.url}
                     </p>
                   )}
                 </div>

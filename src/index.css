@@ -240,6 +240,12 @@ button:focus-visible {
   color: #090e10;
 }
 
+h4{
+  margin: 5px 0;
+}
+
+
+
 /* Loader  */
 @keyframes bouncing-loader {
   to {
@@ -304,7 +310,7 @@ button:focus-visible {
   .left-part {
     padding: 1rem 0.5rem;
     margin-right: 0.5rem;
-    min-width: 500px;
+    min-width: 200px;
   }
 
   .textDark {

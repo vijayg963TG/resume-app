@@ -23,15 +23,12 @@ export const rowwData = [
 ];
 
 export const colData = [
-  { field: "Id" },
+  // { field: "Id" },
   { field: "Name" },
   { field: "Email" },
   { field: "Delete" },
   { field: "View" },
 ];
-
-      // if(text==="summary" || text==="description" ){
-      //             }
 
 export const initialState = {
   isLogo: true,
